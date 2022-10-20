@@ -1,0 +1,13 @@
+body {
+    font-family: sans-serif;
+    color: whitesmoke;
+    background-color: black;
+    margin: 0;
+  }
+
+.weather-display { /*class for discription for weather app, if there is time, cause to cgange based on where people move mouse */
+    display: flex; 
+    background-color: rgba(39, 137, 230, 0.863);
+    flex-wrap: wrap;
+    justify-content: center;   
+}

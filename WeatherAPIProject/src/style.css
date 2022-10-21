@@ -5,6 +5,13 @@ body {
     margin: 0;
   }
 
+.weather-banner {
+  display: flex; 
+  background-color: rgba(39, 137, 230, 0.863);
+  flex-wrap: wrap;
+  justify-content: center;   
+}
+
 .weather-display { /*class for discription for weather app, if there is time, cause to cgange based on where people move mouse */
     display: flex; 
     background-color: rgba(39, 137, 230, 0.863);

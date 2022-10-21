@@ -5,16 +5,19 @@ body {
     margin: 0;
   }
 
-.weather-banner {
+
+
+.weather-banner {/*class for discription for weather app, if there is time, cause to cgange based on where people move mouse */
   display: flex; 
   background-color: rgba(39, 137, 230, 0.863);
   flex-wrap: wrap;
   justify-content: center;   
 }
 
-.weather-display { /*class for discription for weather app, if there is time, cause to cgange based on where people move mouse */
+.weather-display { 
     display: flex; 
-    background-color: rgba(39, 137, 230, 0.863);
+    background-color: rgba(221, 229, 236, 0.089);
     flex-wrap: wrap;
     justify-content: center;   
 }
+

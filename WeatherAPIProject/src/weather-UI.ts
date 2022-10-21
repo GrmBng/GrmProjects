@@ -1,9 +1,8 @@
 import './style.css';
 // learn how to us ts to populate dom
+
+const bannerElement = document.getElementsByClassName('weather-banner');
+
 export function bannerEditorAndExporter() {
-  const bannerElement = document.createElement('div');
-  bannerElement.className = 'weather-banner';
-  bannerElement.innerText = 'Choose your three day forcast.';
-  const body = document.getElementsByTagName('BODY')[0];
-  body.append(bannerElement);
+  bannerElement[0].innerHTML = 'Choose your three day forcast.';
 }

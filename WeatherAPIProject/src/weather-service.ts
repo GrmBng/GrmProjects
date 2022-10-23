@@ -5,6 +5,6 @@ const BASE_URL = 'https://www.7timer.info/bin/civil.php';
 
 export function getWeatherReport(latitude: number, longitude: number) {
   return fetch(
-    `${BASE_URL}?lon=${longitude}&lat=${latitude}&ac=0&unit=metric&output=json&tzshift=0`
+    `${BASE_URL}?lon=${longitude}&lat=${latitude}&ac=0&unit=metric&output=json&tzshift=+2`
   );
 }

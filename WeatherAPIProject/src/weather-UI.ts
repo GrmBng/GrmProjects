@@ -1,4 +1,5 @@
 import './style.css';
+
 // learn how to us ts to populate dom
 
 const bannerElement = document.getElementsByClassName('weather-banner');

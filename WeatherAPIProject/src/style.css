@@ -15,10 +15,23 @@ body {
 
 .weather-display { 
     display: flex; 
-    background-color: rgba(221, 229, 236, 0.089);
+    text-align: center;
+    padding: 24px 32px;
     flex-wrap: wrap;
-    justify-content: center;   
+    background-color: rgba(197, 44, 6, 0.753);
+    border-radius: 8px;
 }
+
+
+
+.weather-date {
+  flex:1;
+  text-align: left;
+  padding: 24px 32px;
+  background-color: rgba(22, 109, 190, 0.151);
+  border-radius: 8px;
+}
+
 
 #pretoria-button {
   display: flex; 

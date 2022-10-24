@@ -19,4 +19,13 @@ function dateSplitter(theDateString: any): string {
   return theDateString;
 }
 
-export function temperatureRenderer(tempData: any): void {}
+//min and max temperature renderer
+//use of time stamps:3 hour intevals, first from 02:00 - 23:00, 0 - 6 in array
+// 7 - 13 next day, 14 - 20 last day
+
+// city object to cycle through cities
+const cities = { Pretoria: 'pretoria', Durban: 'durban', Capetown: 'capetown' };
+
+export function temperatureRenderer(tempData: any): void {
+  const temperatureVaribleDiv = <HTMLDivElement>document.getElementById();
+}

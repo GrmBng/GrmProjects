@@ -1,6 +1,6 @@
 import './style.css';
 import { getWeatherReport } from './weather-service';
-import { dateRenderer } from './renderers';
+import { dateRenderer, temperatureRenderer } from './renderers';
 
 // const pretoriaTableFiller = document.getElementById('pretoria-button');
 // const durbanTableFiller = document.getElementById('durban-button');
@@ -13,6 +13,7 @@ function fetchUnwrapData(lat: number, long: number): any {
     .then((data) => {
       console.log(data);
       dateRenderer(data);
+      temperatureRenderer(data);
     })
     .catch((error: Error) => console.error(error));
 }

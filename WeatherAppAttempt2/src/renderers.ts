@@ -27,5 +27,10 @@ function dateSplitter(theDateString: any): string {
 const cities = { Pretoria: 'pretoria', Durban: 'durban', Capetown: 'capetown' };
 
 export function temperatureRenderer(tempData: any): void {
-  const temperatureVaribleDiv = <HTMLDivElement>document.getElementById();
+  let locationValue: keyof typeof cities;
+  for (locationValue in cities) {
+    let city = cities[locationValue];
+    console.log(city);
+  }
+  // const temperatureVaribleDiv = <HTMLDivElement>document.getElementById();
 }

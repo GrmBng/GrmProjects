@@ -18,3 +18,5 @@ function dateSplitter(theDateString: any): string {
   )} ${theDateString.substring(4, 6)} ${theDateString.substring(0, 4)}  `;
   return theDateString;
 }
+
+export function temperatureRenderer(tempData: any): void {}

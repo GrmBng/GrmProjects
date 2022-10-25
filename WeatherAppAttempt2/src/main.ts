@@ -7,13 +7,12 @@ import { dateRenderer, temperatureRenderer } from './renderers';
 // const capeTableFiller = document.getElementById('capetown-button');
 
 //function that gets called to unwrap and implement data
-function fetchUnwrapData(lat: number, long: number): any {
+function fetchUnwrapData(lat: number, long: number, city: string): any {
   getWeatherReport(lat, long)
     .then((response: Response) => response.json())
     .then((data) => {
-      console.log(data);
       dateRenderer(data);
-      temperatureRenderer(data);
+      temperatureRenderer(data, city);
     })
     .catch((error: Error) => console.error(error));
 }
@@ -21,10 +20,13 @@ function fetchUnwrapData(lat: number, long: number): any {
 // arrays containing pretoria/durban/capetown coordinates
 const arrayOfLongitude = [28.2293, 31.0218, 18.4241];
 const arrayOfLatidudes = [25.7479, 29.8587, 33.9249];
-
+const arrayOfCities = ['pretoria', 'durban', 'capetown'];
 function cycleThroughCoordinates(): void {
   for (let i = 0; i < 3; i++) {
-    fetchUnwrapData(arrayOfLongitude[i], arrayOfLatidudes[i]);
+    console.log(arrayOfLongitude[i]);
+    console.log(arrayOfLatidudes[i]);
+    console.log(arrayOfCities[i]);
+    fetchUnwrapData(arrayOfLongitude[i], arrayOfLatidudes[i], arrayOfCities[i]);
   }
 }
 

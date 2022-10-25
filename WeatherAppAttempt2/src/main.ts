@@ -23,9 +23,6 @@ const arrayOfLatidudes = [25.7479, 29.8587, 33.9249];
 const arrayOfCities = ['pretoria', 'durban', 'capetown'];
 function cycleThroughCoordinates(): void {
   for (let i = 0; i < 3; i++) {
-    console.log(arrayOfLongitude[i]);
-    console.log(arrayOfLatidudes[i]);
-    console.log(arrayOfCities[i]);
     fetchUnwrapData(arrayOfLongitude[i], arrayOfLatidudes[i], arrayOfCities[i]);
   }
 }

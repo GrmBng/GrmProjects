@@ -46,13 +46,15 @@ export function temperatureRenderer(
         sectionInTheDataseries <= 3;
         sectionInTheDataseries++
       ) {
-        let cycleCounter: number = 1;
-        for (let temperature of tempData.dataseries[arrayValueNumber].temp2m) {
-          cycleCounter++;
-          arrayValueNumber++;
-          console.log(temperature);
-          if (cycleCounter === 6) {
-            break;
+        let arrayNumberPoint: number = 0;
+        for (arrayNumberPoint; arrayNumberPoint <= 6; arrayNumberPoint++) {
+          let temperature: keyof typeof tempData.dataseries[typeof arrayValueNumber];
+
+          for (temperature in tempData.dataseries[arrayValueNumber]) {
+            // console.log(arrayValueNumber);
+            arrayValueNumber++;
+
+            console.log(temperature);
           }
         }
       }

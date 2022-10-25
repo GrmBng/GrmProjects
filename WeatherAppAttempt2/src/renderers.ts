@@ -39,7 +39,20 @@ export function temperatureRenderer(
   for (locationValue in cities) {
     let city = cities[locationValue];
     if ((city = temperatureCity)) {
-      const temperatureVaribleDiv = <HTMLDivElement>document.getElementById();
+      let arrayValueNumber:number = 0
+      let sectionInTheDataseries:number = 0
+      for(sectionInTheDataseries = 1, sectionInTheDataseries <= 3, sectionInTheDataseries++) {
+        let cycleCounter:number = 1;
+        for(let temperature in tempData.dataseries[arrayValueNumber].temp2m) {
+          cycleCounter++;
+          arrayValueNumber++;
+          console.log(temperature);
+          if(cycleCounter === 6){
+            break;
+          }
+        }
+      }
+      // const temperatureVaribleDiv = <HTMLDivElement>document.getElementById();
     }
   }
   // const temperatureVaribleDiv = <HTMLDivElement>document.getElementById();

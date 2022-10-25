@@ -26,11 +26,21 @@ function dateSplitter(theDateString: any): string {
 // city object to cycle through cities
 const cities = { Pretoria: 'pretoria', Durban: 'durban', Capetown: 'capetown' };
 
-export function temperatureRenderer(tempData: any): void {
+// cycle through json object, asign to element three times,
+// use two for loops, one that goes to three, the other that
+//cyles throgh the json array up to seven - use vaaribles to count or the map function?
+//using the map funtion would require me to extract and create new array anyway?
+
+export function temperatureRenderer(
+  tempData: any,
+  temperatureCity: string
+): void {
   let locationValue: keyof typeof cities;
   for (locationValue in cities) {
     let city = cities[locationValue];
-    console.log(city);
+    if ((city = temperatureCity)) {
+      const temperatureVaribleDiv = <HTMLDivElement>document.getElementById();
+    }
   }
   // const temperatureVaribleDiv = <HTMLDivElement>document.getElementById();
 }

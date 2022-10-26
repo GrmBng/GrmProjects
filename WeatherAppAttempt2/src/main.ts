@@ -7,15 +7,15 @@ import { dateRenderer, temperatureRenderer } from './renderers';
 // const capeTableFiller = document.getElementById('capetown-button');
 
 //function that gets called to unwrap and implement data
-function fetchUnwrapData(lat: number, long: number, city: string): any {
-  getWeatherReport(lat, long)
-    .then((response: Response) => response.json())
-    .then((data) => {
-      dateRenderer(data);
-      temperatureRenderer(data, city);
-    })
-    .catch((error: Error) => console.error(error));
-}
+// function fetchUnwrapData(lat: number, long: number, city: string): void {
+//   getWeatherReport(lat, long)
+//     .then((response: Response) => response.json())
+//     .then((data) => {
+//       dateRenderer(data);
+//       temperatureRenderer(data, city);
+//     })
+//     .catch((error: Error) => console.error(error));
+// }
 
 // arrays containing pretoria/durban/capetown coordinates
 const arrayOfLongitude = [28.2293, 31.0218, 18.4241];

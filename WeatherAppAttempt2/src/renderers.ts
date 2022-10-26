@@ -38,7 +38,7 @@ export function temperatureRenderer(
   let locationValue: keyof typeof cities;
   for (locationValue in cities) {
     let city = cities[locationValue];
-    if ((city = temperatureCity)) {
+    if (city === temperatureCity) {
       let arrayValueNumber: number = 0;
       let sectionInTheDataseries: number = 0;
       for (
